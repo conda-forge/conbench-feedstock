@@ -144,7 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@ElenaHenderson](https://github.com/ElenaHenderson/)
-* [@danielfrg](https://github.com/danielfrg/)
 * [@dianaclarke](https://github.com/dianaclarke/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 
