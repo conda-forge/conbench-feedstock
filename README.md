@@ -1,11 +1,11 @@
-About conbench
-==============
+About conbench-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conbench-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/conbench/conbench
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conbench-feedstock/blob/main/LICENSE.txt)
 
 Summary: Continuous Benchmarking (CB) Framework
 
