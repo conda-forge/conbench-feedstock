@@ -1,5 +1,5 @@
 {% set name = "conbench" %}
-{% set version = "2023.4.6" %}
+{% set version = "2023.4.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/conbench-{{ version }}.tar.gz
-  sha256: f00dbb56979a863c91d343b49769b8212aa41dbe7eae944c92e7d327b9e9661e
+  sha256: ebc884a797292847a72ed41df687dc22d24696c27c1f4fb59e9a0327e4c2f311
 
 build:
   entry_points:
