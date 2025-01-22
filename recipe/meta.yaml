@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/conbench-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/conbench-{{ version }}.tar.gz
   sha256: ebc884a797292847a72ed41df687dc22d24696c27c1f4fb59e9a0327e4c2f311
 
 build:
@@ -14,19 +14,20 @@ build:
     - conbench=conbench.cli:conbench
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
   run:
     - click
     - numpy
     - psutil
     - py-cpuinfo
     - pytest >=7.0
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml
     - requests
 
@@ -38,6 +39,7 @@ test:
     - conbench --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/conbench/conbench
